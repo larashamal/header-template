@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.list {
+  @apply mx-auto mt-2 flex max-w-fit bg-pink-400;
+}

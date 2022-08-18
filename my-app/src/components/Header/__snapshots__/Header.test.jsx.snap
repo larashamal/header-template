@@ -3,11 +3,10 @@
 exports[`renders correctly 1`] = `
 <header>
   <h1
-    className="text-3xl font-bold text-pink-500"
+    className="text-3xl font-bold text-pink-400 text-center my-8"
   >
     Hello 
     John Doe
   </h1>
-  ;
 </header>
 `;

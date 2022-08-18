@@ -1,9 +1,13 @@
-export default function Form() {
+import PropTypes from "prop-types";
+
+export default function Form({ setName }) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
     const submission = Object.fromEntries(new FormData(event.target));
-    console.log(submission);
+    setName(submission.name);
+
+    event.target.reset();
   };
 
   return (
@@ -33,3 +37,8 @@ export default function Form() {
     </form>
   );
 }
+
+
+Form.propTypes = {
+  setName: PropTypes.func.isRequired,
+};
